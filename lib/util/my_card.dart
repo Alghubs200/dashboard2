@@ -26,17 +26,34 @@ class MyCard extends StatelessWidget {
             color: color, borderRadius: BorderRadius.circular(16)),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            const Text(
-              "Balance",
-              style: TextStyle(color: Colors.white),
-            ),
-            const SizedBox(
-              height: 10,
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                const Text(
+                  "Balance",
+                  style: TextStyle(color: Colors.white),
+                ),
+                Row(
+                  children: [
+                    Image.asset(
+                      'icons/visa.png',
+                      height: 60,
+                    ),
+                    SizedBox(
+                      height: 3,
+                    ),
+                  ],
+                ),
+              ],
             ),
             Text(
               '\$' + balance.toString(),
-              style: TextStyle(color: Colors.white, fontSize: 28),
+              style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 36,
+                  fontWeight: FontWeight.bold),
             ),
             const SizedBox(
               height: 30,

@@ -33,6 +33,7 @@ class MyListTile extends StatelessWidget {
               ),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
+                // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Text(
                     tileTitle,
@@ -52,6 +53,5 @@ class MyListTile extends StatelessWidget {
         ],
       ),
     );
-    Icon(Icons.arrow_forward_ios);
   }
 }
